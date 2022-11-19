@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+}
+.main{
+    background-color:#05386B;
+    width: 100wh;
+    height: 100vh;
+    
+}
+
+
+.header{
+    background-color: #5CDC95;
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    
+}
+
+.menu{
+
+    position: absolute;
+    right: 1px;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.menu ul{
+    
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin: 20px;
+    gap: 20px;
+    
+    
+}
+
+.menu li div{
+    height: 0px;
+    padding: 2px;
+    transition: .5s;
+    align-items: center;
+    
+}
+
+.menu li div:hover{
+    height: 20px;
+    background-color: #05386B;
+    color: white;
+}
+
+.logo{
+    display: flex;
+}
+
+.header .text{
+    margin-top: 17px;
+    color:  #05386B;
+}
+
+.header img{
+    width: 40px;
+    height: 40px;
+    margin-top: 16px;
+    margin-left: 10px;
+
+}
+
+.header h2{
+
+    font-size: 20px;
+   font-family: 'Bungee', cursive;;
+  
+  
+
+}
+
+.header p{
+    font-size:14px ;
+    font-weight: lighter;
+    font-family: 'Istok Web', sans-serif;
+    
+}
+.main-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.content{
+    color:#b6bcc4;
+}
+
+.content h1{
+   font-size: 60px;
+   margin-bottom: 9px;
+   font-family: 'Arvo', serif;
+   
+   
+}
+.content h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+
+.content p{
+    width: 400px;
+    font-family: 'Caveat', cursive;
+}
+
+
+.main-content img{
+    width: 400px;
+}
+
+.sidebanner{
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+    width: 400px;
+    height: 350px;
+    border: 1px #EDF5E1 solid;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+
+.content #sign-up{
+    padding: 8px 16px;
+    border: none;
+    background-color: #5CDC95;
+    border-radius: 5px;
+    color: #05386B;
+    margin-top: 20px;
+    font-family:  'Roboto', sans-serif;
+}
+.content #sign-up:hover{
+    padding: 8px 16px;
+    border: none;
+    background-color: #34a366;
+    border-radius: 5px;
+    color: #05386B;
+    margin-top: 20px;
+    font-family:  'Roboto', sans-serif;
+}
+
+
