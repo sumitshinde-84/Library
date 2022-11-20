@@ -36,21 +36,21 @@
 
 <div class="subtitle">
 
-    <h2>Total books: 300</h2>
-    <h2>Total Read: 150</h2>
+    <h2 class="total">Total books: 0 </h2>
+    <h2 class="totalRead">Total Read: 0</h2>
 
     </div>
     <div class="book-info">
-    <p>Title: Rich dad and poor dad</p>
-    <p>Author:Robin greene</p>
-    <p>pages: 436</p>
-    <p>Status :Readed</p>
-    <p>Book No :1</p>
-    <P>Shelv No :A1</P>
+    <p class="paraTitle">Title: Rich dad and poor dad</p>
+    <p class="paraAuthor">Author:Robin greene</p>
+    <p class="paraPages">pages: 436</p>
+    <p class="paraStatus">Status :Not Read</p>
+    <p class="BookNo">Book No :1</p>
+    
     </div>
 <div class="btns">
     <button id="add">Add</button>
-    <button id="remove">Remove</button>
+    <button id="remove" onclick="remove()">Remove</button>
 
 </div>
    
@@ -112,18 +112,19 @@
         <input type="text" name="book-code" id="book-code" >
     </div>
     
-    
-   <div class="togle">
-    <div class="circle"></div>
-   </div>
-    
-   <input type="button" class="form-add" value="Add Book">
+    <div class="container">
+        <p style="font-size: 17px;font-weight: 500;margin-bottom: 10px;" class="Status">Not Read</p>
+        <label class="switch"><input class="checkBox" onclick="forToggleSwitch()" type="checkbox" />    <div></div>
+        </label>
+      </div>
+
+      <input type="reset" class="form-add" value="Add Book"> 
     
     
     </form>
 
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 
 </body>
 </html>
