@@ -8,54 +8,67 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Bebas+Neue&family=Bungee&family=Caveat:wght@500&family=Istok+Web:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,400&display=swap" rel="stylesheet">
-<body>
-   
-     <div class="main">
-      
-        <div class="header">
-            <div class="logo">
-                <img src="images/logo.png" alt="">
-                <div class="text">
-                    <h2>Town Hall</h2>
-                    <p>Library of Bombay</p>
-                    
-                   
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Bebas+Neue&family=Bungee&family=Caveat:wght@500&family=Istok+Web:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,400&display=swap" rel="stylesheet">    <body>
 
-                </div>
-                
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a ><div>Home</div></a></li>
-                    <li><a href="Library.html"><div>Library</div></a></li>
-                    <li><a><div>About Us</div></a></li>
-                </ul>
+
+<div class="preloader">
+</div>
+
+<div class="main">  
+
+    <!-- header section  -->
+
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+            <div class="text">
+            <h2>Town Hall</h2>
+            <p>Library of Bombay</p>
             </div>
         </div>
         
-        <div class="main-content">
+        <div class="menu">
+                
+             <ul>    
+                <li><a ><div>Home</div></a></li>  
+                <li><a href="Library.html"><div>Library</div></a></li>
+                <li><a><div>About Us</div></a></li>
+             </ul>
+        
+         </div>
+    </div>
+    
+  <!-- main container which contain library image and greet -->
 
-            <div class="sidebanner">
-                <img src="images/sidebanner.png" alt="">
-            </div>
+    <div class="main-content">
 
-            <div class="content">
-                <h1>WELCOME TO</h1>
-                <H3>Our Bombay Library</H3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ea aspernatur. Quae et at sit est provident? Praesentium impedit dolorum hic aliquid nihil explicabo perspiciatis. Omnis in dolorum excepturi vel inventore dolor est quaerat consequatur? Facere quia explicabo modi labore voluptatum quasi corrupti ipsum, laudantium officia fuga, maxime eveniet porro?
-                </p>
-                <button id="sign-up">Sign Up</button>
-            </div>
-
+        <div class="sidebanner">
+            <img src="images/sidebanner.png" alt="">
             
         </div>
+  
+        <div class="content">
+            
+            <h1>WELCOME TO</h1>
+            <H3>Our Bombay Library</H3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ea aspernatur. Quae et at sit est provident? Praesentium impedit dolorum hic aliquid nihil explicabo perspiciatis. Omnis in dolorum excepturi vel inventore dolor est quaerat consequatur? Facere quia explicabo modi labore voluptatum quasi corrupti ipsum, laudantium officia fuga, maxime eveniet porro?
+            </p>
+            <button id="sign-up">Sign Up</button>
+        </div>     
+    </div>
         
 
 
-     </div>
+</div>
 
     <script src="script.js"></script>
+    <script>
+
+     const loader = document.querySelector('.preloader');
+     window.addEventListener('load',()=>{
+        loader.style.display='none';
+    })
+    </script>
 </body>
 </html>

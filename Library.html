@@ -5,81 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libray</title>
-    <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="library.css">
 
 </head>
 <body>
-   
-<div class="main-box1">
-
-   
-        
-        <div class="rakk rakk0">
-        </div>
-        <div class="rakk rakk1"></div>
-        <div class="rakk rakk2"></div>
-        <div class="rakk rakk3"></div>
-        <div class="rakk rakk4"></div>
-     
-        
-
-
- 
-
-
-    </div>
-
-   <div class="info">
-  <div class="title">
-    <h1>Bombay Libray</h1> 
-</div>
-
-<div class="subtitle">
-
-    <h2 class="total">Total books: 0 </h2>
-    <h2 class="totalRead">Total Read: 0</h2>
-
-    </div>
-    <div class="book-info">
-    <p class="paraTitle">Title: Rich dad and poor dad</p>
-    <p class="paraAuthor">Author:Robin greene</p>
-    <p class="paraPages">pages: 436</p>
-    <p class="paraStatus">Status :Not Read</p>
-    <p class="BookNo">Book No :1</p>
-    
-    </div>
-<div class="btns">
-    <button id="add">Add</button>
-    <button id="remove" onclick="remove()">Remove</button>
-
-</div>
-   
-</div>
-
-
-
-
-
+   <div class="preloader">
     
    </div>
 
 
+<!-- bookshelves content starts from hear -->
 
+<div class="main-box1">
 
-   <div class="main-box2">
-
-   
-        
-    <div class="rakk"></div>
-    <div class="rakk"></div>
-    <div class="rakk"></div>
-    <div class="rakk"></div>
-    <div class="rakk"></div>
+    <div class="rakk rakk0"></div>
+    <div class="rakk rakk1"></div>
+    <div class="rakk rakk2"></div>
+    <div class="rakk rakk3"></div>
+    <div class="rakk rakk4"></div>
     
+</div>
+
+<!-- information section starts from hear -->
+
+    <div class="info">
+
+    <div class="title">
+        <h1>Bombay Libray</h1> 
+    </div>
+
+    <div class="subtitle">
+        <h2 class="total">Total books: 0 </h2>
+        <h2 class="totalRead">Total Read: 0</h2>
+    </div>
+    
+    <div class="book-info">
+
+        <p class="paraTitle">Title: Rich dad and poor dad</p>
+        <p class="paraAuthor">Author:Robin greene</p>
+        <p class="paraPages">pages: 436</p>
+        <p class="paraStatus">Status :Not Read</p>
+        <p class="BookNo">Book No :1</p>
+    
+    </div>
+    <div class="btns">
+        <button id="add">Add</button>
+        <button id="remove" onclick="remove()">Remove</button>
+    </div>
+   
+    </div> 
+</div>
 
 
+<!-- second bookshelves  content starts from hear  -->
 
 
+<div class="main-box2">
+
+    <div class="rakk"></div>
+    <div class="rakk"></div>
+    <div class="rakk"></div>
+    <div class="rakk"></div>
+    <div class="rakk"></div>
 
 </div>
 
@@ -90,41 +79,44 @@
     <div class="row">
         <label for="bookTitle">TITLE</label>
         <input type="text" name="title" id="bookTitle" >
-        
-    
     </div>
-    
+
     <div class="row">
         <label for="bookAuthor">AUTHOR</label>
         <input type="text" name="author" id="bookAuthor" >
-    
     </div>
-    
+
     <div class="row">
         <label for="bookPages">PAGES</label>
         <input type="tel" name="pages" id="bookPages">
     </div>
     
-    
     <div class="row">
-    
         <label for="book-code">CODE</label>
         <input type="text" name="book-code" id="book-code" >
     </div>
-    
     <div class="container">
         <p style="font-size: 17px;font-weight: 500;margin-bottom: 10px;" class="Status">Not Read</p>
-        <label class="switch"><input class="checkBox" onclick="forToggleSwitch()" type="checkbox" />    <div></div>
-        </label>
-      </div>
+        <label class="switch">
+            
+            <input class="checkBox" onclick="forToggleSwitch()" type="checkbox" />    
+            <div></div>
 
-      <input type="reset" class="form-add" value="Add Book"> 
-    
-    
-    </form>
+        </label>
+    </div>
+    <input type="reset" class="form-add" value="Add Book"> 
+
+</form>
 
 
 <script src="script.js" defer></script>
+<script>
+
+    const loader = document.querySelector('.preloader');
+    window.addEventListener('load',()=>{
+       loader.style.display='none';
+   })
+   </script>
 
 </body>
 </html>
