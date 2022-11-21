@@ -12,6 +12,7 @@
 
 
 <div class="preloader">
+<div class="round"></div>
 </div>
 
 <div class="main">  
@@ -64,11 +65,15 @@
 
     <script src="script.js"></script>
     <script>
-
+     
      const loader = document.querySelector('.preloader');
      window.addEventListener('load',()=>{
-        loader.style.display='none';
+        setTimeout(()=>{
+            loader.style.display='none';
+        }, 2000)
+        
     })
+
     </script>
 </body>
 </html>

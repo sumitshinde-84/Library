@@ -3,14 +3,14 @@
 body{
 
     background-color: #05386B;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: relative;
-    display: flex;
-     justify-content: space-around;
-     overflow: hidden;
-     
-   
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr 1fr
+;
+    
 }
 
 
@@ -52,6 +52,7 @@ body{
 
 
 .rakk{
+
     border: 1px rgb(24, 24, 12) solid;
     background-color: #683116;
     height: auto;
@@ -72,7 +73,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: ;
+    background-color: #05386B;
+    grid-column: 2 /3;
+    
     
     
 }
@@ -119,7 +122,6 @@ body{
    text-align: left;
    font-size: 20px;
    font-family: 'Roboto', sans-serif;;
-   z-index: 1;
    box-shadow: 5px 5px 5px 5px #042b52;
 }
 
@@ -144,15 +146,16 @@ form{
     width: 500px;
     height: 500px;
     background-color:#34a366 ;
-   display: flex;
+    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    color:  #042b52;;
-  z-index: 2;
+   z-index: 2;
    position: absolute;
    top: 600px;
    transition: 1s;
+   grid-column: 2 /3;
    
 }
 
@@ -222,9 +225,24 @@ input[type="text"],input[type="tel"]{
   }
 
   .preloader{
-    background: #b6bcc4 url(images/loader.gif) center center no-repeat;
-    background-size: 10%;
+    background: #b6bcc4 ;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     z-index: 100;
+    position: relative;
+   
+}
+
+.round{
+    
+    width: 150px;
+    height: 150px;
+    background: #34a366 url(images/loader.gif) center center no-repeat;
+    background-size: 90%;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    
+
 }
